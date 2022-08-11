@@ -11,8 +11,8 @@ from shelf.models import Shelf
 
 
 class Book(models.Model):
-    isbn: ISBNField()
-    title: models.CharField(max_length=150)
+    isbn = ISBNField()
+    title = models.CharField(max_length=150)
     subject = models.CharField(max_length=150)
     category = models.CharField(max_length=50)
     author = models.CharField(max_length=80)
