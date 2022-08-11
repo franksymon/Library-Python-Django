@@ -4,7 +4,7 @@ from django.db import models
 
 
 class Shelf(models.Model):
-    category: models.CharField(max_length=50)
+    category = models.CharField(max_length=50)
 
     def __str__(self) -> str:
         return f"Category: {self.category} | N°: {self.id}"
